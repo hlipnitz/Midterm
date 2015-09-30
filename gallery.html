@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Heather's Javascript Photo Gallery</title>
+	</head>
+
+	<body>
+		<div class="diy-slideshow">
+			<figure class="show">
+				<img src="Image/newlogo.png" width="60%"/><figcaption>A more recent iteration of my personal logo. 7/2015</figcaption>  
+			</figure>
+  			<figure>
+    			<img src="Image/Web.png" width="90%" /><figcaption>The current iteration of my personal website. 7/2015</figcaption> 
+			</figure>
+			<figure>
+				<img src="Image/1.jpg" width="100%" /><figcaption>A series of 3 icons for a hospitality management-themed project. 9/2013</figcaption>  
+			</figure>
+  			<figure>
+				<img src="Image/2.JPG" width="90%" /><figcaption>Photograph - Taken with a Canon PowerShot SX500 IS. 3/2014</figcaption>  
+			</figure>
+  			<figure>
+				<img src="Image/4.jpg" width="90%" /><figcaption>Cover series for novelty "gardening" books. Created in Adobe Photoshop and Illustrator. 10/2014</figcaption>  
+			</figure>
+			<figure>
+				<img src="Image/5.jpg" width="50%" /><figcaption>Photography - Taken with a Canon PowerShot SX500 IS. 4/2014</figcaption>  
+			</figure>
+			<figure>
+				<img src="Image/6.jpg" width="100%" /><figcaption>Created from given text and images, but meant to exemplify artist. 10/2014</figcaption>  
+			</figure>
+			<figure>
+				<img src="Image/7.jpg" width="50%" /><figcaption>Completed for Restaurant Brand Identity. Logo shown at top of menu. 4/2015</figcaption>  
+			</figure>
+			<figure>
+				<img src="Image/8.png" width="80%" /><figcaption>Website for Restaurant Brand Identity. 4/2015</figcaption>  
+			</figure>
+			<figure>
+				<img src="Image/9.jpg" width="100%" /><figcaption>Photography - Taken with 35mm Minolta Manual Camera, Scanned with Epson Program.. 10/2014</figcaption>  
+			</figure>
+			<figure>
+				<img src="Image/P2.jpg" width="50%" /><figcaption>Completed packaging for Accessories Brand Identity. Logo shown on front of bag and box. 4/2015</figcaption>  
+			</figure>
+			<figure>
+				<img src="Image/10.jpg" width="40%" /><figcaption>Photography - Taken with 35mm Minolta Manual Camera, Scanned with Epson Program. 10/2014</figcaption>  
+			</figure>
+			<figure>
+				<img src="Image/11.jpg" width="60%" /><figcaption>Produced through hand and Adobe Photoshop methods. 10/2014</figcaption>  
+			</figure>
+			<figure>
+				<img src="Image/12.jpg" width="100%" /><figcaption>Photography - Taken with 35mm Minolta Manual Camera, Scanned with Epson Program. 9/2014</figcaption>  
+			</figure>
+			<figure>
+				<img src="Image/13.jpg" width="85%" /><figcaption>Set of 3 DVD covers of director Ridley Scott's movies. Created using paint, Photoshop, and Illustrator. 11/2014</figcaption>  
+			</figure>
+			<figure>
+				<img src="Image/14.jpg" width="60%" /><figcaption>Produced through hand and Adobe Photoshop methods. 10/2014</figcaption>  
+			</figure>
+			<figure>
+				<img src="Image/15.png" width="90%" /><figcaption>Project to create website for favorite movie, in which I chose Interstellar. 5/2015</figcaption>  
+			</figure>
+  			<span class="prev">&laquo;</span>
+  			<span class="next">&raquo;</span>
+		</div>  
+		<p>Welcome to a preview of my portfolio work!</p>
+
+		<footer class="site-footer" id="site-footer">
+    		<div class="menu">
+        		<div class="dropdown" href="#">Menu
+            		<ul class="footer_menu">
+                		<li><a href="#">About Heather</a></li>
+                		<li><a href="#">Contact Info</a> </li>
+                		<li><a href="#">Resume</a></li>
+            		</ul>
+        		</div>
+    		</div>
+		</footer>
+
+	<style type="text/css">
+		body {
+  			margin: 0; 
+  			padding: 0;
+  			background-color: #d3ffce;
+  			height: 100%;
+  			font-family: "hero", futura, arial;
+			}
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			}
+		.diy-slideshow{
+  			position: relative;
+  			display: block;
+  			overflow: hidden;
+			}
+		figure{
+  			position: absolute;
+  			opacity: 0;
+  			transition: 1s opacity;
+			}
+		figcaption{
+  			position: absolute;
+  			display: block;
+			margin-left: auto;
+			margin-right: auto;
+  			font-size: .8em;
+  			bottom: .75em;
+  			padding: .25em;
+  			color: #000;
+  			background: rgba(0,128,128, .5);
+  			border-radius: 2px;
+			}
+		figure.show{
+  			opacity: 1;
+  			position: static;
+  			transition: 1s opacity;
+			}
+		.next, .prev{
+  			color: #fff;
+  			position: fixed;
+  			background: rgba(0,128,128, .6);
+  			top: 50%;
+  			z-index: 1;
+  			font-size: 2em;
+  			margin-top: -.75em;
+  			opacity: .3;
+  			user-select: none;
+  			transition: opacity 500ms linear;
+			}
+		.next:hover, .prev:hover{
+  			cursor: pointer;
+  			opacity: 1;
+  			
+			}
+		.next{
+  			right: 0;
+  			padding: 10px 5px 15px 10px;
+  			border-top-left-radius: 3px;
+  			border-bottom-left-radius: 3px;
+			}
+		.prev{
+  			left: 0;
+  			padding: 10px 10px 15px 5px;
+  			border-top-right-radius: 3px;
+  			border-bottom-right-radius: 3px;
+			}
+		p{
+  			margin: 10px 20px;
+  			color: rgb(0,128,128);
+  			text-shadow: 2px 2px #bbb;
+  			text-align: center;
+			}
+			
+		.site-footer {
+    		background: rgba(0,128,128,0.5);
+    		color: white;
+    		font-size: 14px;
+    		width: 100%;
+			}
+		footer {
+    		bottom: 0;
+    		position: absolute;
+    		width: 100%;
+    		background: rgba(0,128,128,0.5);
+    		padding-top: 10px;
+    		padding-bottom: 10px;
+			}
+		div.dropdown {
+    		right: 10px;
+    		text-align: right;
+    		position: relative;
+    		padding-right: 30px;
+			}
+		ul.footer_menu li {
+    		padding: 10px;
+    		display: block;
+    		text-align: center;
+			}
+		ul.footer_menu li a {
+    		text-decoration: none;
+    		color: white;
+			}
+		ul.footer_menu li:hover {
+    		background: white;
+    		text-align: center;
+			}
+		ul.footer_menu li:hover a {
+    		color: black;
+			}
+		ul.footer_menu li:first-child {
+    		border-radius: 3px 3px 0 0;
+			}
+		ul.footer_menu {
+    		background: rgba(0,128,128, 0.5);
+    		position: absolute;
+    		opacity: 0;
+    		bottom: 25px;
+    		padding-left: 0px;
+    		right: 0;
+    		visibility: hidden;
+    		opacity: 0;
+    		transition: visibility 0.3s 0.5s, opacity 0.3s 0.5s;
+    		border-radius: 3px 3px 0 0;
+			}
+		.dropdown:hover ul.footer_menu {
+    		visibility: visible;
+    		opacity: 1;
+    		transition-delay: 0s;
+			}
+	</style>
+	
+<script type="text/javascript">
+
+	(function(){
+  		//note that I followed along with a guide to create the slideshow of my work
+	var counter = 0, // to keep track of current slide
+    	$items = document.querySelectorAll('.diy-slideshow figure'), // collection of all slides, caching for performance
+    	numItems = $items.length; // total number of slides
+
+	// this shows the next slides, hides the previous
+	var showCurrent = function(){
+  	var itemToShow = Math.abs(counter%numItems);// uses remainder operator to get the actual index of the element to show  
+  
+  	// remove .show from whichever element has it at the time
+  	[].forEach.call( $items, function(el){
+    el.classList.remove('show');
+  	});
+  
+  	// add .show to the one item that's supposed to have it
+  	$items[itemToShow].classList.add('show');    
+	};
+
+	// add click events to prev & next buttons 
+	document.querySelector('.next').addEventListener('click', function() {
+     	counter++;
+     	showCurrent();
+  	}, false);
+
+	document.querySelector('.prev').addEventListener('click', function() {
+     	counter--;
+     	showCurrent();
+  	}, false);
+  
+	})();
+
+	var now = new Date();
+	var hour = now.getHours();
+
+	if (hour > 17 && hour < 20){
+		document.write ('<body style="background-color: #fa8072">');
+		window.alert("Good evening! Dinner time!");}
+
+	else if (hour > 19 && hour < 22){
+		document.write ('<body style="background-color: #ee8a4f">');
+		window.alert("Aren't you sleepy yet?");}
+
+	else if (hour > 21 || hour < 5){
+		document.write ('<body style="background-color: #666489;">');
+		window.alert("Why aren't you sleeping yet?");}
+
+	else if (hour > 8 && hour < 18){
+		document.write ('<body style="background-color: #e0ceed">');
+		window.alert("How's your day going?");}
+
+	else if (hour > 6 && hour < 9){
+		document.write ('<body style="background-color: #81cec7">');
+		window.alert("Good morning, sunshine!");}
+
+	else if (hour > 4 && hour < 7){
+		document.write ('<body style="background-color: #528b8b">');
+		window.alert("Up bright and early?");}
+
+	else {
+		document.write ('<body style="background-color: #d3ffce">');
+	window.alert("Hello!");}
+</script>
+	</body>
+</html>
